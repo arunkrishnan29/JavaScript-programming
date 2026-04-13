@@ -1,0 +1,36 @@
+<!--
+5g. Continuing from 5f, calculate the total (cost + tax), save it in a variable
+called 'totalCost', and display the message 'Total cost: $$(totalCost}'
+in tho concolo 
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Your order is:</p>
+
+<button onclick="
+console.log(`Total cost: $${totalCost}`);
+alert(`Total cost: $${totalCost}`);
+">
+    Show Total
+</button>
+
+<script>
+let coffee = 5;
+let bagels = 3 * 2;
+let soup = 9;
+
+// Step 1: cost
+let cost = coffee + bagels + soup;
+
+// Step 2: tax (10%)
+let tax = Math.round(cost * 0.10 * 100) / 100;
+
+// Step 3: total cost
+let totalCost = Math.round((cost + tax) * 100) / 100;
+</script>
+
+</body>
+</html>

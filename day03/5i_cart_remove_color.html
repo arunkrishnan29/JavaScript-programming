@@ -1,0 +1,52 @@
+<!--
+5i. In the Cart Quantity project, ad
+decreases the cart quantity by 1.
+a button 'Remove from cart',
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+     <title>
+        Flipkart
+     </title>    
+    </head>
+        <body>
+            <button onclick="
+            cartquantity=cartquantity+1
+            ;
+            console.log(`cartquantity=${cartquantity}`)
+            ">
+                Add to cart
+            </button>
+                <button onclick ="
+                cartquantity=cartquantity+4
+                console.log(`cartquantity=${cartquantity}`)">
+                +4
+                </button>
+                    <button onclick ="
+                        cartquantity+=5;
+                        console.log(`cartquantity = ${cartquantity}`)
+                          ">
+                        +5
+                    </button>
+                        <button onclick ="
+                        cartquantity=0;
+                        console.log('The Cart is reset');
+                        console.log(`The Cartquantity is ${cartquantity}` );
+                        "
+                        class="reset">
+                        reset
+                    </button>
+
+                    <style>
+                        .reset{
+                        background-color:red;
+                        color:white
+                        }       
+                    </style>
+            <script>
+                let cartquantity=0;            
+          </script> 
+        </body>
+</html>

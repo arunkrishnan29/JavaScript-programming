@@ -1,0 +1,23 @@
+<!--
+5f. Continuing from 5e, display 'Tax (10%): $$(tax}' in the console.
+-->
+
+<!Doctype html>
+<html>
+    <body>
+        <p>
+            Your order is :  
+        </p>
+    <button onclick="alert(`10% tax is $${taxcost}`),console.log(`10% tax is : $${taxcost}`);">
+        bill
+    </button>
+    <script>
+        let coffee=(5*1);
+        let bagels=(3*2);
+        let soup=(9*1);
+        const cost = coffee+bagels+soup;
+        let taxcost=Math.round(cost*0.10)*100/100;
+        let finalcost=taxcost + cost;
+    </script>
+    </body>
+</html>

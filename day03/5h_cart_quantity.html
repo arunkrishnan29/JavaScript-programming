@@ -1,0 +1,37 @@
+<!--
+5h. In the Cart Quantity project, add 2 more buttons '+4' and '+5', which
+increase the quantity by 4 and 5 when you click them. Try using +=
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+     <title>
+        Flipkart
+     </title>    
+    </head>
+        <body>
+            <button onclick="
+            cartquantity=cartquantity+1
+            ;
+            console.log(`cartquantity=${cartquantity}`)
+            ">
+                Add to cart
+            </button>
+                <button onclick ="
+                cartquantity=cartquantity+4
+                console.log(`cartquantity=${cartquantity}`)">
+                +4
+                </button>
+                    <button onclick ="
+                        cartquantity+=5;
+                        console.log(`cartquantity = ${cartquantity}`)
+                          ">
+                        +5
+                    </button>
+            <script>
+            let cartquantity=0;
+
+          </script> 
+        </body>
+</html>

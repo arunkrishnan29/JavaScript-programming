@@ -1,0 +1,76 @@
+<!--
+5j. Add 2 buttons '-2' and '-3', which decrease the quantity by 2 and 3.
+-->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+     <title>
+        Flipkart
+     </title>    
+    </head>
+        <body>
+            <button onclick="
+            cartquantity=cartquantity+1
+            ;
+            console.log(`cartquantity=${cartquantity}`)
+            ">
+                Add to cart
+            </button>
+                <button onclick ="
+                cartquantity=cartquantity+4;
+                console.log(`cartquantity=${cartquantity}`)">
+                +4
+                </button>
+                    <button onclick ="
+                        cartquantity+=5;
+                        console.log(`cartquantity = ${cartquantity}`)
+                          ">
+                        +5
+                    </button>
+                        <button onclick ="
+                        cartquantity=0;
+                        console.log('The Cart is reset');
+                        console.log(`The Cartquantity is ${cartquantity}` );
+                        "
+                        class="reset">
+                        reset
+                    </button>
+
+                    <!-- 
+                    using Mathmax() to AVOID Negative cart quantity values syntax = cartquantity = Math.max(0, cartquantity - value);
+                     -->
+                        <button onclick="
+                        cartquantity=Math.max(0,cartquantity-2);
+                        console.log(`cartquantity is ${cartquantity}`);
+                        "
+                        class="remove4">
+                            -2
+                        </button>
+                            <button onclick="
+                            cartquantity=Math.max(0,cartquantity-3);
+                            console.log(`cartquantity is ${cartquantity}`);
+                            "
+                            class="remove5">
+                            -3
+                        </button>
+                    <style>
+                        .reset{
+                        background-color:red;
+                        color:white
+                        }       
+                        .remove4{
+                        background-color: lightcoral;
+                        color: black;
+                        }
+                        .remove5{
+                        background-color: lightpink;
+                        color: black
+                        }
+                    </style>
+            <script>
+                let cartquantity=0;            
+          </script> 
+        </body>
+</html>

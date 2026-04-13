@@ -1,0 +1,39 @@
+<!--
+5k. Use the shortcuts - and = in 5l and 5j.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Using Shortcuts 
+        </title>     
+    </head>
+    <body>
+        <p>
+            a=a+4 Also equal to a+=4;
+            b=b-7 Also equal to b-=7; 
+        </p>
+        <p>
+            a++ also equal a=a+1
+            a-- also equal a=a-1
+        </p>
+
+        <button  onclick="
+        num++;
+        console.log(`Num + 1 is ${num}`);
+        ">
+            ++
+        </button>
+        
+        <button  onclick="
+        num=Math.max(0,num-=1);
+        console.log(`Num - 1 is ${num}`);
+        ">
+            --
+        </button>
+        <script>
+            let num=0;
+        </script>
+    </body>
+</html>

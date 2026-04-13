@@ -1,0 +1,113 @@
+<!--
+5n. Create a ‹script>, create a variable called 'calculation', and save
+an empty string inside: let calculation =";
+(This variable will store the calculation like "1 + 2' or "11 + 2 + 2')
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>
+         Calculator
+      </title>
+        <p>
+         Very very simple Calculator using html,css,javascript
+        </p>
+           <p>
+            It is not the full calculator it can only used to calulate squares and same number calculations
+          </p>
+            <p>
+              open console(right click -- inspect) to see the calulation results
+            </p>
+              <p>
+                Only single input is taken and can only able to do with the same num calculations
+              </p>
+    </head>
+      <body>    
+        <button onclick="num1=num1+1;
+        console.log(`num1=${num1}`);"> 
+          1
+        </button>
+          <button onclick="num1=num1+2;
+          console.log(`num1=${num1}`);
+          "> 
+            2
+          </button>
+            <button onclick="num1=num1+3;
+            console.log(`num1=${num1}`);
+            ">
+             3
+            </button>
+             <button onclick="num1=num1+4;
+             console.log(`num1=${num1}`);
+             ">
+               4
+             </button>
+              <button onclick ="num1=num1+5;
+              console.log(`num1=${num1}`);
+              ">
+                5
+              </button>
+                <button onclick = "num1=num1+6;
+                console.log(`num1=${num1}`);
+                ">
+                  6
+                </button>
+                  <button onclick ="num1=num1+7
+                  console.log(`num1=${num1}`);
+                  ">
+                    7
+                  </button>
+                    <button onclick="num1=num1+8
+                    console.log(`num1=${num1}`);
+                    ">
+                      8
+                    </button>
+                      <button onclick="num1=num1+9
+                      console.log(`num1=${num1}`);
+                      ">
+                        9
+                      </button>
+                        <button onclick="num1=num1+0
+                        console.log(`num1=${num1}`);
+                        ">
+                          0
+                        </button>              
+                          <button onclick="symbol=num1+num1;
+                          console.log(`The Result of ${num1} + ${num1} = `);
+                          console.log(`-->${num1+num1}`);
+                          ">
+                            add(+)
+                          </button>
+                            <button onclick = "symbol=num1-num1;
+                            console.log(`The Result of ${num1} - ${num1} = `);
+                            console.log(`-->${num1-num1}`);
+                            ">
+                              sub(-)
+                            </button>      
+                              <button onclick = "symbol=num1*num1;
+                              console.log(`The Result of ${num1} * ${num1} = `);
+                              console.log(`-->${num1*num1}`);
+                              ">
+                                mul(*)
+                              </button>
+                                <button onclick ="symbol=num1/num1;
+                                console.log(`The Result of ${num1} / ${num1} = `); 
+                                console.log(`-->${num1/num1}`); 
+                                ">
+                                div(/)
+                                </button>
+                                  <button onclick="num1=0
+                                  console.log(`The Calculator is Reset `);
+                                  console.log(`num1=${num1}`);
+                                  ">
+                                    Reset
+                                  </button>
+                                  <script>
+                                    let calculation;
+                                    let num1=0;
+                                    let symbol;
+
+                                  </script>
+      </body>         
+</html>
