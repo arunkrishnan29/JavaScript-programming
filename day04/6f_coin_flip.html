@@ -1,0 +1,81 @@
+<!--
+
+We'll create a coin-flip game (create 1 HTML file for exercises 6f - 6j):
+6f. Generate a random number with Math.random(). Save it in a variable.
+6g. Create an if-statement and check:
+• If the number is less than 0.5, then display 'heads' in the console.
+• Else display 'tails' in the console.
+6h. Instead of displaying 'heads' or 'tails' in the console, save the result
+in a variable called 'result'.
+6i. Let's say we're trying to guess the result. Create a variable called
+'guess' and save your guess ('heads' or 'tails').
+• If your guess matches the result, display "You win!' in the console
+• If your guess does not match the result, display 'You lose!'
+6j. (Challenge) Instead of using if-statements in the previous exercises,
+try switching them into ternary operators (condition? A : B).
+3-34-01/22-15・56
+6 Rooleans and If_Statements>
+cal
+
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Coin Flip Guess Game
+    </title>
+    <p>
+      There are two options HEADS and TAILS Guess the correct one from the random values provides by computer to Win the Game
+    </p>
+  </head>
+  <body>
+
+    <button onclick="
+      gvalue='HEADS';
+      console.log(gvalue);    
+
+      random=Math.random();
+      let rvalue='';
+
+      (random>0.5)?
+        rvalue='HEADS':
+        rvalue='TAILS';
+
+      if (gvalue === rvalue){
+        console.log(`Your guess is ${gvalue} and The computer's guess is ${rvalue} YOU WON !!!`);
+      }
+      else{
+        console.log(`Your guess is ${gvalue} and The computer's guess is ${rvalue} YOU LOSE`);
+      }
+    ">
+    HEADS
+    </button>
+
+    <button onclick="
+      gvalue='TAILS';
+      console.log(gvalue);    
+
+      random=Math.random();
+      rvalue='';
+
+      if(random>0.5){
+        rvalue='HEADS'
+      }
+      else{
+        rvalue='TAILS'
+      }
+
+      if (gvalue === rvalue){
+        console.log(`Your guess is ${gvalue} and The computer's guess is ${rvalue} YOU WON !!!`);
+      }
+      else{
+        console.log(`Your guess is ${gvalue} and The computer's guess is ${rvalue} YOU LOSE`);
+      }
+    ">
+    TAILS
+    </button>
+
+
+  </body>
+</html>

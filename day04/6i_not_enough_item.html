@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <title>
+        Flipkart
+     </title>    
+    </head>
+        <body>
+            <button onclick="
+            console.log('The Maximun Cart Quantity is 10')
+            if(cartquantity<=9){
+            cartquantity=cartquantity+1
+            ;}
+            else{
+            console.log('You hve reached the Maximum quantity');}
+            console.log(`cartquantity=${cartquantity}`)
+            ">
+                Add to cart
+            </button>
+                <button onclick ="
+                console.log('The Maximun Cart Quantity is 10')
+                if(cartquantity<=6){
+                cartquantity=cartquantity+4;
+                }
+                else{
+                console.log('You hve reached the Maximum quantity');
+                }
+                console.log(`cartquantity=${cartquantity}`)">
+                +4
+                </button>
+                    <button onclick ="
+                     console.log('The Maximun Cart Quantity is 10')
+                if(cartquantity<=9){
+                    cartquantity+=5;
+                }
+                else{
+                console.log('You hve reached the Maximum quantity');
+                }
+                        console.log(`cartquantity = ${cartquantity}`)
+                          ">
+                        +5
+                    </button>
+                        <button onclick ="
+                        cartquantity=0;
+                        console.log('The Cart is reset');
+                        console.log(`The Cartquantity is ${cartquantity}` );
+                        "
+                        class="reset">
+                        reset
+                    </button>
+
+                        <!-- FIXED PART BELOW -->
+                        <button onclick="
+                        if(cartquantity-2 < 0){
+                        alert('Not enough items in the cart');
+                        }
+                        else{
+                        cartquantity=cartquantity-2;
+                        console.log(`cartquantity is ${cartquantity}`);
+                        }
+                        "
+                        class="remove4">
+                            -2
+                        </button>
+                            <button onclick="
+                            if(cartquantity-3 < 0){
+                            alert('Not enough items in the cart');
+                            }
+                            else{
+                            cartquantity=cartquantity-3;
+                            console.log(`cartquantity is ${cartquantity}`);
+                            }
+                            "
+                            class="remove5">
+                            -3
+                        </button>
+
+                    <style>
+                        .reset{
+                        background-color:red;
+                        color:white
+                        }       
+                        .remove4{
+                        background-color: lightcoral;
+                        color: black;
+                        }
+                        .remove5{
+                        background-color: lightpink;
+                        color: black
+                        }
+                    </style>
+
+            <script>
+                let cartquantity=0;            
+          </script> 
+        </body>
+</html>
