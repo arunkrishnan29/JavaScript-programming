@@ -1,0 +1,47 @@
+<!--
+7e. Create a function 'convertToCelsius(fahrenheit)' that takes a number
+in degrees Fahrenheit and returns a number in degrees Celsius.
+• Formula: Celsius = (Fahrenheit - 32) * 5/9
+• convertToCelsius(86) => 30
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Functions</title>
+</head>
+
+<body>
+
+  <p>
+    Given Celsius = 25 
+    Expected Fahrenheit = 77
+  </p>
+
+   <button onclick="convertToFahrenheit(temp_c)">
+    Convert Celsius to Fahrenheit
+   </button>
+
+   <button onclick="convertToCelsius(temp_f)">
+    Convert Fahrenheit to Celsius
+   </button>
+
+          <script>
+          let temp_c = 25;
+          let temp_f = 77;
+
+          // Celsius to Fahrenheit
+          function convertToFahrenheit(celsius) {
+            let result = (celsius * 9 / 5) + 32;
+            console.log(`Fahrenheit: ${result}`);
+          }
+
+          // Fahrenheit to Celsius
+          function convertToCelsius(fahrenheit) {
+            let result = (fahrenheit - 32) * 5 / 9;
+            console.log(`Celsius: ${result}`);
+          }
+        </script>
+
+</body>
+</html>

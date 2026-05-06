@@ -1,0 +1,89 @@
+<!--
+7h. Update convertLength to support converting between km, miles,
+and also feet. Note: 1 mile = 5280 ft, 1 km = 3281 ft (approximately).
+• convertLength(5, 'miles', 'km') => '8 km'
+• convertLength(5, 'miles', 'ft') => '26400 ft'
+• convertLength(5, 'km', 'ft') => '16405 ft'
+-->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Functions</title>
+</head>
+
+<body>
+
+  <p>
+function
+  </p>
+
+  <button onclick="convertLength(32, 'km', 'miles')">
+    Convert 32 km to miles
+  </button>
+
+    <button onclick="convertLength(50, 'miles','km')">
+    Convert 50 miles to km 
+  </button>
+
+      <button onclick="convertLength(50, 'km', 'ft')">
+    Convert 50 km to ft 
+  </button>
+
+    <button onclick="convertLength(5, 'miles', 'km')">
+    Convert 5 miles to km
+  </button>
+
+    <button onclick="convertLength(5, 'miles','ft')">
+    Convert 5 miles to ft 
+  </button>
+
+      <button onclick="convertLength(5, 'km', 'ft')">
+    Convert 5 km to ft 
+  </button>
+
+  <script>
+
+ 
+
+    function convertLength(length, from, to) {
+
+      if (from==`km` && to == `miles`){
+        let length1=length/1.6;
+        console.log(`${length1} ${to}` )
+      }
+      else if (from== `miles` && to ==`km`){
+        let length2=length*1.6;
+        console.log(`${length2} ${to}` )
+
+      }
+      else if (from== `miles` && to ==`ft`){
+        let length3=length*5280;
+        console.log(`${length3} ${to}` )
+      }
+    
+      else if (from== `ft` && to ==`miles`){
+        let length4=length/5280;
+        console.log(`${length4} ${to}` )
+      }
+      else if (from== `km` && to ==`ft`){
+        let length5=length*3280.84;
+        console.log(`${length5} ${to}` )
+      }
+    
+      else if (from== `ft` && to ==`km`){
+        let length6=length*0.0003048;
+        console.log(`${length6} ${to}` )
+      }
+    }
+
+    
+
+
+  </script>
+
+</body>
+
+</html>
