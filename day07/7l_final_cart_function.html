@@ -1,0 +1,105 @@
+<!--
+71. Modify 'updateCartQuantity' so that if the quantity is invalid, alert;
+and then return; (this is called an early return). An early return
+make our code cleaner because we can remove the 'else-if' / 'else'.
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cart Quantity</title>
+  </head>
+  <body>
+    <button onclick="
+      updatecartquantity(cartQuantity);
+    ">Show Quantity</button>
+
+    <button onclick="
+      modifycartquantity(1);
+      updatecartquantity(cartQuantity);
+      
+    ">Add to Cart</button>
+
+    <button onclick="
+      modifycartquantity(2);
+
+      updatecartquantity(cartQuantity);
+      
+    ">+2</button>
+
+    <button onclick="
+      modifycartquantity(3);
+      updatecartquantity(cartQuantity);
+
+    ">+3</button>
+
+    <button onclick="
+      modifycartquantity(4);
+      updatecartquantity(cartQuantity);
+
+    ">+4</button>
+
+    <button onclick="
+      modifycartquantity(5);
+      updatecartquantity(cartQuantity);
+
+    ">+5</button>
+
+    <!-- vvv This code was changed. vvv -->
+    <button onclick="
+      modifycartquantity(-1);
+      updatecartquantity(cartQuantity);
+
+    ">Remove from cart</button>
+
+    <button onclick="
+      modifycartquantity(-2);
+      updatecartquantity(cartQuantity);
+
+    ">-2</button>
+
+    <button onclick="
+      modifycartquantity(-3);
+      updatecartquantity(cartQuantity);
+
+    ">-3</button>
+
+    <button onclick="
+      resetcartquantity(cartQuantity);
+      updatecartquantity(cartQuantity);
+    ">Reset Cart</button>
+
+    <script>
+      let cartQuantity = 0;
+
+      function modifycartquantity(n){
+
+      if (cartQuantity + n > 10) {
+        alert('The cart is full');
+      } 
+      else {
+        
+        cartQuantity=cartQuantity+n;
+      }
+      }
+
+      function updatecartquantity(Num1){
+
+      if (cartQuantity<0){
+        alert("Invalid Cart Items");
+      }
+      else
+      console.log(Num1);
+      {
+      
+      }
+      }
+
+      function resetcartquantity(num2){
+
+      cartQuantity = 0;
+      console.log('Cart was reset.');
+
+      }
+    </script>
+  </body>
+</html>
