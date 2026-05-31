@@ -1,0 +1,154 @@
+<!--
+10e. Continuing from 10d, create 3 buttons that can be turned ON / OFF
+Gaming
+Music
+Tech
+-->
+
+
+
+
+<!--
+<!DOCTYPE>
+<html>
+    <head>
+        <title>
+            btn color change
+        </title>
+        <h4>
+            creatring three buttons
+        </h4>
+        <style>
+            .btn1{
+                background-color: rgb(199, 198, 198);
+                color:black;
+                font-family: Times;
+                padding: 8px 8px;
+                border-radius: 7px;
+                border: none;
+            }
+            .toggle{
+                background-color: rgb(0, 0, 0);
+                color:rgb(255, 255, 255);
+                
+                font-family: Times;
+                padding: 8px 8px;
+                border-radius: 7px;
+                border: none;               
+            }
+                .btn2{
+                background-color: rgb(199, 198, 198);
+                color:black;
+                font-family: Times;
+                padding: 8px 8px;
+                border-radius: 7px;
+                border: none;
+            }
+            .toggle2{
+                background-color: rgb(0, 0, 0);
+                color:rgb(255, 255, 255);
+                
+                font-family: Times;
+                padding: 8px 8px;
+                border-radius: 7px;
+                border: none;               
+            }            
+            
+            .btn3{
+                background-color: rgb(199, 198, 198);
+                color:black;
+                font-family: Times;
+                padding: 8px 8px;
+                border-radius: 7px;
+                border: none;
+            }
+            .toggle3{
+                background-color: rgb(0, 0, 0);
+                color:rgb(255, 255, 255);
+                
+                font-family: Times;
+                padding: 8px 8px;
+                border-radius: 7px;
+                border: none;               
+            }
+        </style>
+    </head>
+
+    <body>
+        <button class="btn1 toggle" onclick = " check('btn1','toggle'), console.log('clicked')">
+            Gamming
+        </button>
+        <button class="btn2 toggle2" onclick = " check('btn2','toggle2'), console.log('clicked')">
+            Music
+        </button>
+        <button class="btn3 toggle3" onclick = " check('btn3','toggle3'), console.log('clicked')">
+            Tech
+        </button>
+        <script>
+            function check(x,y){
+                const btn=document.querySelector(`${x}`)
+                if(btn.classList.contains(y)){
+                    btn.classList.remove(y)
+                }
+                else{
+                    btn.classList.add(y)
+                }
+
+            }
+        </script>
+    </body>
+</html>
+
+-->
+
+<!DOCTYPE>
+<html>
+    <head>
+        <title>
+            btn color change
+        </title>
+        <h4>
+            creatring three buttons
+        </h4>
+
+        <style>
+            .btn1, .btn2, .btn3{
+                background-color: rgb(199, 198, 198);
+                color:black;
+                font-family: Times;
+                padding: 8px 8px;
+                border-radius: 7px;
+                border: none;
+            }
+
+            .toggle, .toggle2, .toggle3{
+                background-color: rgb(0, 0, 0);
+                color:rgb(255, 255, 255);
+            }
+        </style>
+    </head>
+
+    <body>
+        <button class="btn1" onclick="check(this, 'toggle')">
+            Gamming
+        </button>
+
+        <button class="btn2" onclick="check(this, 'toggle2')">
+            Music
+        </button>
+
+        <button class="btn3" onclick="check(this, 'toggle3')">
+            Tech
+        </button>
+
+        <script>
+            function check(btn, className){
+                if(btn.classList.contains(className)){
+                    btn.classList.remove(className);
+                } else {
+                    btn.classList.add(className);
+                }
+            }
+        </script>
+    </body>
+</html>

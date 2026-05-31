@@ -1,0 +1,53 @@
+<!--
+8i. We'll improve the coin flip game from exercise 6j to be like the rock
+paper scissors game.
+• Copy the code from exercise 6j (see the solution for 6j if needed).
+• Create 2 buttons to play the game
+heads
+tails
+• When clicking 'heads' play the game with guess = 'heads'.
+• When clicking 'tails' play the game with guess = 'tails'.
+• Create a function 'playGame(guess)' to reuse the code.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <button onclick=" 
+/*    const randomNumber1 = Math.random();
+      const result1 = randomNumber1 < 0.5 ? 'heads' : 'tails';
+      const guess1 = 'heads';
+      console.log(`computer guess is    ${result1}`);
+      console.log(`your guess is    ${guess1}`);
+      console.log(guess1 === result1 ? 'You win!' : 'You lose!');
+*/
+        playGame('heads');
+        ">
+        heads
+    </button>
+    
+    <button onclick=" 
+/*      const randomNumber2 = Math.random();
+      const result2 = randomNumber2 < 0.5 ? 'heads' : 'tails';
+      const guess2 = 'tails';
+      console.log(`computer guess is    ${result2}`);
+      console.log(`your guess is    ${guess2}`);
+      console.log(guess2 === result2 ? 'You win!' : 'You lose!');
+*/
+      playGame('tails');  
+        ">
+        tails
+    </button>
+
+    <script>
+        function playGame(guess){
+      const randomNumber1 = Math.random();
+      const result1 = randomNumber1 < 0.5 ? 'heads' : 'tails';
+      console.log(`computer guess is    ${result1}`);
+      console.log(`your guess is    ${guess}`);
+      console.log(guess === result1 ? 'You win!     :-) ' : 'You lose!      :-( ');
+        }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!--
+8c. Using bracket notation, add a property 'delivery-time' to the object
+with the value '3 days'. Display the updated object in the console.
+-->
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        Amazon Projects
+    </head>
+    <body>
+        <h3>
+        "We have Basketball and Football products"
+        </h3>
+
+        <script>
+            
+
+            var product1={
+                name:"Basketball",
+                price: 2095
+            }
+
+            var product2 = {
+                name:"Football",
+                price: 3091
+            }
+            /*
+            console.log("Old Prices are  ");
+            console.log(product1);
+            console.log(product2);
+            console.log("Prices are Increased by 500");
+            product1.price=price+500;
+            product2.price+=500;
+            */
+
+            var product3 = {
+                name:"Football",
+                price: 3091    
+            }
+
+            product3['delivery-time']='3 days'
+        
+        </script>
+
+        <h2>
+        "Click the buttons to see the new Prices"
+        </h2>
+
+        <button onclick="
+        console.log(product1);
+        "
+        >
+        basketball
+        </button>
+
+        <button onclick="
+        console.log(product2.name);
+        console.log(product2.price);
+        "
+        >
+        Football
+
+        <button onclick="
+        console.log(product3);
+        "
+        >
+        add new
+        </button>
+
+        </button>
+    </body>
+</html>

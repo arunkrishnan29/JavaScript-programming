@@ -1,0 +1,77 @@
+<!--
+8k. Use localStorage to save and load the score (hint: you'll needs to use
+JSON.stringify() to convert the score object to a string).
+-->
+<!DOCTYPE html>
+<html>
+  <head></head>
+
+  <body>
+
+    <button onclick="playGame('heads');">
+      heads
+    </button>
+    
+    <button onclick="playGame('tails');">
+      tails
+    </button>
+
+    <button onclick="
+      score.wins = 0;
+      score.losses = 0;
+
+      localStorage.setItem('score', JSON.stringify(score));
+
+      console.log('Score reset');
+      console.log(score);
+    ">
+      Reset Score
+    </button>
+
+    <script>
+        //changing string into object 
+        //localstorage -> string -> object 
+      let score = JSON.parse(localStorage.getItem('score')) || {
+        wins: 0,
+        losses: 0
+      };
+
+      console.log(score);
+
+      let result1;
+      function playGame(guess) {
+
+        const randomNumber1 = Math.random();
+        if(randomNumber1 < 0.5){
+            result1='heads';
+        }
+        else{
+            result1='tails'
+        }
+        console.log(`computer guess is ${result1}`);
+        console.log(`your guess is ${guess}`);
+
+        if (guess === result1) {
+
+          console.log('You win! :-)');
+
+          score.wins += 1;
+
+        } else {
+
+          console.log('You lose! :-(');
+
+          score.losses += 1;
+        }
+
+        // Save score into localStorage in string 
+        //object -> striing -> localstorage
+        localStorage.setItem('score', JSON.stringify(score));
+
+        console.log(score);
+      }
+
+    </script>
+
+  </body>
+</html>

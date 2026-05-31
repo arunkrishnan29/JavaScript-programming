@@ -1,0 +1,40 @@
+<!--
+9b. Continuing from 9a, create another button < button>9b</button>
+below. Using JavaScript, change the text in the second button to
+'9b done!' (hint: add a class and use querySelector).
+-->
+
+
+<!DOCTYPE>
+<html>
+    <head>
+        <title>
+        DOM.com
+        </title>
+    </head>
+    <body>
+        <p>
+
+            Using querySelector()
+
+            
+        </p>
+        <button onclick="
+            alert('Welcome TO JS');
+            
+            ">
+            click here 
+        </button>
+        <button class="button2">
+            9b
+        </button>
+        <script>
+            console.log(document.querySelector('button'));
+            console.log(document.querySelector('button'));
+
+            document.querySelector('.button2')
+                .innerHTML='9b done';
+        </script>
+    </body>
+</html>
+

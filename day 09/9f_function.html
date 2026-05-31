@@ -1,0 +1,44 @@
+<!--
+9f. Continuing from 9e, create a function to reuse the code (if Yo
+n already did this, skip this exercise).
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Displaying Name</title>
+</head>
+
+<body>
+
+    <p>onkeydown method</p>
+
+    <input class="n1" onkeydown="handleKey(event)">
+
+    <button onclick="showName()">
+        submit
+    </button>
+
+    <p class="result"></p>
+
+    <script>
+
+        // Reusable function (MAIN LOGIC)
+        function showName() {
+            const name = document.querySelector('.n1').value;
+
+            document.querySelector('.result')
+                .innerHTML = `Your Name is ${name}`;
+        }
+
+        // Enter key handler
+        function handleKey(event) {
+            if (event.key === 'Enter') {
+                showName(); // reuse function
+            }
+        }
+
+    </script>
+
+</body>
+</html>

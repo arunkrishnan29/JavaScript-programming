@@ -1,0 +1,54 @@
+<!--
+8e. Create a function 'isSameProduct(productl, product2)', which returns
+true if 2 products have the same values inside ('name' and 'price').
+If not, return false. Create 2 products and try out the function.
+(Hint: objects are references so you can't compare them directly).
+-->
+
+
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <script>
+      const product1 = {
+        name: 'basketball',
+        price: 2095
+      };
+      console.log(product1);
+      console.log(product1);
+      product1['delivery-time'] = '3 days';
+      console.log(product1);
+      const product2 = {
+        name: 'basketball',
+        price: 209
+      };
+      console.log(product2);
+      function comparePrice(product1,product2){
+
+        if (product1.price<product2.price){
+            console.log(" The producct1 is less expensive ");
+        }
+        else if (product1.price==product2.price){
+            console.log(" The Product1 and Product2 are equally Priced");
+        }
+        
+        else {
+            console.log(" The product2 is less expensive ");
+        }
+        }
+      function isSameProduct(product1,product2){
+
+        if (product1.name == product2.name && product1.price==product2.price){
+            console.log(" The product1 and product2 both are same ");
+        }
+        else {
+            console.log(" The product1 and product2 both are different");
+        }
+      }  
+      console.log(comparePrice(product1,product2));  
+      console.log(isSameProduct(product1,product2));  
+
+    </script>
+  </body>
+</html>

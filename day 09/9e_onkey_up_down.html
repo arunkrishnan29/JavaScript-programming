@@ -1,0 +1,58 @@
+<!--
+9e. Modify exercise 9d so that when you press 'Enter' in the <input>, it
+will also display the same message on the page (hint: use
+onkeydown and the event object).
+-->
+
+<!DOCTYPE>
+<html>
+    <head>
+        <title>
+            Displaying Name
+        </title>
+        
+    </head>
+    <body>
+
+        <P>
+            onkeydown method 
+        </P>
+        <input class= "n1" onkeydown="keyy(event)">
+        <button onclick="
+        const name=document.querySelector('.n1').value;
+        document.querySelector('.result')
+        .innerHTML = `Your Name is ${name}`
+        ">
+            submit
+        </button>
+            <p class="result"></p>
+            <script>
+                function keyy(event){
+                    if (event.key==='Enter'){
+                        const name=document.querySelector('.n1').value;
+                        document.querySelector('.result')
+                        .innerHTML = `Your Name is ${name}`
+                    }
+
+                }
+            </script>
+
+            <P>
+                onkeyup method 
+            </P>
+            <input class = "n2" onkeyup="       
+                const n2=document.querySelector('.n2').value;
+                document.querySelector('.result')
+                .innerHTML = `Your Name is ${n2}`
+
+">
+        <button onclick="
+        const name2=document.querySelector('.n2').value;
+        document.querySelector('.result')
+        .innerHTML = `Your Name is ${name2}`
+        ">
+            submit
+        </button>
+
+    </body>
+</html>

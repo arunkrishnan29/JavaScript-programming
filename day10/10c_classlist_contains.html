@@ -1,0 +1,56 @@
+<!--
+10c. classList has another method, classList.contains('class-nam.el"oo rede etno
+which checks if an element has a class.
+• Create a button: <button class="js-button">Test</butto
+• Use document.querySelector() and classList.contains('j
+to check if this button has the class 'js-button'.
+ console.l0g() the result.
+-->
+
+
+<!--
+The button is like a toy with a name tag called addto. 
+When we write document.querySelector('.addto'), we are telling the computer, 
+“Go find the toy that has the name tag addto,” and the computer stores that button inside 
+a box called button. Then button.classList.contains('addto') asks the button, 
+“Do you have the name tag addto?” Since the button really has that class name, the answer is true, 
+which means “Yes!”. Finally, console.log() shows that answer in the browser console for the programmer to see.
+-->
+<!DOCTYPE>
+<html>
+    <head>
+
+        <title>
+            The CSS review
+        </title>
+
+        <p>
+            <h6>
+                THE HTML AND CSS REVIEW classList.contains() and querySelector()            </h6>
+        </p>
+        <style>
+            .addto{
+                background-color: rgb(206, 89, 43);
+                color:black;
+                font-weight: bold;
+                font-family: Times;
+                padding: 8px 8px;
+                border-radius: 60px;
+                border: none;
+            }
+            </style>
+
+            <body>
+                <button class="addto" onclick="console.log('added to cart')">
+                    Add to cart
+                </button>
+                <script>
+
+                    const btn=document.querySelector('.addto');
+
+                    console.log(btn.classList.contains('addto'))
+                    
+                </script>
+        </body>
+    </head>
+</html>

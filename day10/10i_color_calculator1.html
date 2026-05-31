@@ -1,0 +1,150 @@
+<!--
+10i. We'll style the calculator project using CSS.
+• Make a copy of exercise 9j.
+• In your browser, go to:
+supersimple.dev/projects/calculator-final
+This is the final design for the project.
+• Using CSS, style the calculator project to
+look like the final design on the right.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+
+    <style>
+        .num{
+            color:rgb(255, 255, 255);
+            background-color: rgb(87, 74, 122);
+            padding: 20px 20px;
+            border-radius: 50%;
+            margin-right: 5px;
+            font-family: Times;
+            font-size: 23px;
+
+        }
+        .symbol{
+            color:rgb(255, 255, 255);
+            background-color: rgb(48, 19, 128);
+            padding: 20px 20px;
+            border-radius: 50%;
+            margin-right: 5px;
+            font-family: Times;
+            font-size: 23px;
+            font-weight: bold;
+
+        }
+        .clear{
+            color:rgb(255, 255, 255);
+            background-color: rgb(88, 45, 206);
+            padding: 20px 12px;
+            border-radius: 50%;
+            margin-right: 5px;
+            font-family: Times;
+            font-size: 15px;
+
+        }
+    </style>
+  </head>
+
+  <body>
+    <p class="result" >
+        
+    </p>
+    <p>
+      <button class ="num" onclick="updateCalculation('1')">1</button>
+
+      <button class ="num" onclick="updateCalculation('2')">2</button>
+
+      <button class ="num" onclick="updateCalculation('3')">3</button>
+
+      <button class ="symbol" onclick="updateCalculation(' + ')">+</button>
+    </p>
+
+    <p>
+      <button class ="num" onclick="updateCalculation('4')">4</button>
+
+      <button class ="num" onclick="updateCalculation('5')">5</button>
+
+      <button class ="num" onclick="updateCalculation('6')">6</button>
+
+      <button class ="symbol" onclick="updateCalculation(' - ')">-</button>
+    </p>
+
+    <p>
+      <button class ="num" onclick="updateCalculation('7')">7</button>
+
+      <button class ="num" onclick="updateCalculation('8')">8</button>
+
+      <button class ="num" onclick="updateCalculation('9')">9</button>
+
+      <button class ="symbol" onclick="updateCalculation(' * ')">*</button>
+    </p>
+
+    <p>
+      <button class ="num" onclick="updateCalculation('0')">0</button>
+
+      <button class ="symbol" onclick="updateCalculation('.')">.</button>
+
+      <button class="symbol" onclick="
+        calculation = eval(calculation);
+        console.log(calculation);
+
+        localStorage.setItem('cal', calculation);
+        displaycalculation(calculation);
+      ">
+        =
+      </button>
+
+      <button class ="symbol" onclick="updateCalculation(' / ')">/</button>
+    </p>
+
+    <p>
+      <button class="clear" onclick="
+        calculation = '';
+        console.log(calculation);
+
+        localStorage.setItem('cal', calculation);
+        displaycalculation(calculation);
+        displayreset();
+
+      ">
+        Clear
+      </button>
+    </p>
+
+    <script>
+
+      // Get saved value from localStorage.
+      // If nothing exists, use an empty string ''.
+
+      let calculation = localStorage.getItem('cal') || '';
+
+      console.log(calculation);
+      displaycalculation(calculation);
+
+      function updateCalculation(value) {
+
+        // Add the clicked value to the calculation string
+        calculation =calculation+ value;
+
+        // Display in console
+        console.log(calculation);
+        displaycalculation(calculation);
+
+        // Save updated calculation into localStorage
+        localStorage.setItem('cal', calculation);
+      }
+      function displaycalculation(calculation){
+                document.querySelector('.result').innerHTML=` ${calculation}`;
+      }
+        function displayreset(){
+        document.querySelector('.result').innerHTML=` ${0}  `;
+        }
+
+
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!--
+8b. Continuing from 8a, let's say we want to increase the price by 500
+cents. Use dot notation to increase the price, and display the
+updated object in the console.
+-->
+
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        Amazon Projects
+    </head>
+    <body>
+        <h3>
+        "We have Basketball and Football products"
+        </h3>
+
+        <script>
+            const product1={
+                name:"Basketball",
+                price: 2095
+            }
+
+            const product2 = {
+                name:"Football",
+                price: 3091
+            }
+            console.log("Old Prices are  ");
+            console.log(product1);
+            console.log(product2);
+            console.log("Prices are Increased by 500");
+
+        </script>
+
+        <h2>
+        "Click the buttons to see the new Prices"
+        </h2>
+
+        <button onclick="
+        console.log(product1.name);
+        console.log(product1.price+500);
+        "
+        >
+        basketball
+        </button>
+
+        <button onclick="
+        console.log(product2.name);
+        console.log(product2.price+500);
+        "
+        >
+        Football
+
+
+        </button>
+    </body>
+</html>

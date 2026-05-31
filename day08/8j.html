@@ -1,0 +1,51 @@
+<!--
+8j. Create a score object {wins: 0, losses: 0 }, update the score each time
+after playing, and display the score in the console.
+-->
+
+
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <button onclick=" 
+
+        playGame('heads');
+     ">
+        heads
+    </button>
+    
+    <button onclick=" 
+
+      playGame('tails');  
+        ">
+        tails
+    </button>
+
+    <script>
+       var win=0;
+       var lose=0; 
+       var score;
+      function playGame(guess){
+      const randomNumber1 = Math.random();
+      const result1 = randomNumber1 < 0.5 ? 'heads' : 'tails';
+      console.log(`computer guess is    ${result1}`);
+      console.log(`your guess is    ${guess}`);
+      if(guess === result1) {
+         console.log('You win!     :-) ');
+         win=win+1; 
+      }
+      else{
+        console.log('You lose!      :-( ');
+        lose=lose+1;
+      }
+      score={
+            wins:win,
+            lose:lose
+        }
+      console.log(score);
+    }
+
+    </script>
+  </body>
+</html>
