@@ -1,0 +1,27 @@
+<!--
+12g. Imagine we're creating a messaging app. Use setinterval() and
+document.title to create the feature on the
+riaht (the title changes every 1 second).
+(2) New messages
+-->
+
+<!DOCTYPE>
+<html>
+  <head>
+    <title>
+      whatsapp
+    </title>
+  </head>
+  <body>
+    <script>
+      setInterval(function(){
+        if(document.title==="whatsapp"){
+          document.title="(3)New messages";
+        }
+        else{
+          document.title="whatsapp";
+        }
+      },2000)
+    </script>
+  </body>
+</html>

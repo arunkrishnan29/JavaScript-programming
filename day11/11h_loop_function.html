@@ -1,0 +1,36 @@
+<!--
+11h. Create a function addOne(array) that takes an array of numbers and
+returns an array where each number is increased by 1.
+• addOne([1, 2, 3]) => [2, 3, 4]
+• addOne([-2, -1, 0, 99]) => [-1, 0, 1, 100]
+-->
+
+
+<!DOCTYPE>
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            
+            const array1=[1,20,3,40,5,60,7,80,9];
+            const array2=[-1,-2,-3,110,22229,-77,-54,23]
+            console.log("The given array is ",array1);
+            console.log("After 1 added " );
+            console.log(addOne(array1));
+            console.log("The given array is ",array2);
+            console.log("After 1 added " );
+            console.log(addOne(array2));
+            
+
+            function addOne(array1){
+            for(i=0;i<array1.length;i++){
+                const  val=array1[i]+1;
+                console.log(val);
+                
+               }
+            }
+                        
+        </script>
+    </body>
+</html>

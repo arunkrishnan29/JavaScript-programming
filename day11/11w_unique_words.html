@@ -1,0 +1,42 @@
+<!--
+11w. Create a copy of exercise 11q, where we created findindex). Below it,
+create a function unique(array) that takes an array of strings and
+returns an array where each string only appears once (there are
+no duplicates). Try to use the findIndex) function in your solution.
+• uniquell'green', 'red', 'blue', 'red']) => ['green', 'red', 'blue"]
+• unique(['red', 'green', 'green', 'red']) = ['red', 'green']
+-->
+
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<script>const arr1 = ['green', 'red', 'blue', 'red', 'red', 'blue', 'green'];
+
+function findIndex(words, search) {
+  for (let i = 0; i < words.length; i++) {
+    if (words[i] === search) {
+      return i;
+    }
+  }
+  return -1;
+}
+
+function unique(array) {
+  let goodWords = [];
+
+  for (let i = 0; i < array.length; i++) {
+    const firstIndex = findIndex(array, array[i]);
+
+    if (i === firstIndex) {
+      goodWords.push(array[i]);
+    }
+  }
+
+  return goodWords;
+}
+
+console.log(unique(arr1));
+</script>
+</body>
+</html>

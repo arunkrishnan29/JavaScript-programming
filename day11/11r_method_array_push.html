@@ -1,0 +1,33 @@
+<!--
+11r. Create a function removeEgg(foods) that takes an array of strings and
+returns an array where the string 'egg' is removed. (Hint: loop through
+the array and check if each string is 'egg': If it is 'egg', use 'continue;' to
+skip it. If it's not 'egg', add it to the result).
+• removeEgg(l'egg', 'apple', 'egg', 'egg', 'ham']) => ['apple', 'ham']
+-->
+
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<script>
+  const arr1 = ['egg', 'apple', 'egg', 'egg', 'ham'];
+
+  function removeWord(words, search) {
+    let goodWords=[];
+    for (let i = 0; i < words.length; i++) {
+      if (words[i] === search) {
+        continue;   
+      }
+      else {
+        goodWords.push(words[i]);
+      }
+      }
+      return goodWords;
+      }
+  
+
+  console.log(removeWord(arr1, 'egg'));    // 1
+</script>
+</body>
+</html>

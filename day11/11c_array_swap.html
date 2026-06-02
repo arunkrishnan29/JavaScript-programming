@@ -1,0 +1,51 @@
+<!--
+11c. Create a function arraySwap(array) that takes an array and returns an
+array where the first and last values are swapped (or switched).
+• arraySwap([1, 20, 22, 24, 5]) => [5, 20, 22, 24, 1]
+• arraySwap(['hi, 'hello', 'good']) = ['good', 'hello';, 'hi']
+-->
+
+
+<!DOCTYPE>
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+
+            const arr1=[10,20,30];
+            const arr2=[11,22,33];
+            const arr3=['Hi','Hello','Welcome'];
+/*
+            console.log(arr1,getLastValue(arr1,1));
+            console.log(arr2,getLastValue(arr2,2));
+            console.log(arr3,getLastValue(arr3,3));
+*/
+            function getLastValue(array1,n){
+            for(i=0;i<array1.length;i++){
+                const  lastIndexvalue=array1.length-1;
+                console.log(`last element in array${n} = `,array1[lastIndexvalue]);
+                }
+            }
+
+            console.log("Arrays befor swapping\n",arr1 ,"\n",arr2 ,"\n",arr3);
+
+            console.log(arraySwap(arr1,1));
+            console.log(arraySwap(arr2,1));
+            console.log(arraySwap(arr3,1));
+
+            function arraySwap(ar,n){
+                for(i=0;i<ar.length;i++){
+                let temp = ar[0];
+                // Swap first and last
+
+                // we are saving the a[0] to the temp no prevent the missing of original value of a[0]
+                
+                ar[0] = ar[ar.length - 1];
+                ar[ar.length - 1] = temp;
+                console.log(`swaped array${n} = `,ar[i]);
+                }
+            }
+        </script>
+    </body>
+</html>

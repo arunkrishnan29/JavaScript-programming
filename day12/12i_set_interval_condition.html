@@ -1,0 +1,45 @@
+<!--
+12i. Continuing from 12h:
+• Don't let 'messages' go below 0.
+• If messages === 0 stop changing the title
+and display 'App' as the title.
+• When messages > 0 start changing the
+title again.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>instagram</title>
+</head>
+<body>
+
+<button onclick="add()">Add</button>
+<button onclick="remove()">Remove</button>
+
+<script>
+  let message = 0;
+
+  function add() {
+    message++;
+  }
+
+  function remove() {
+    if (message > 0) {
+      message--;
+    }
+  }
+
+  setInterval(function() {
+
+    if (message > 0) {
+      document.title = `(${message}) New messages`;
+    } else {
+      document.title = 'instagram';
+    }
+
+  }, 1000);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!--
+12d. Continuing from exercise 12c, modify the button so that when we
+click it, the text immediately changes to 'Loading..., and then after
+1 second, it changes to 'Finished!.
+-->
+
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+
+<button class="clk" onclick="updateButton()">
+  Start
+</button>
+
+<script>
+  let i = 0;
+
+  function updateButton() {
+    const btn = document.querySelector(".clk");
+
+    btn.innerHTML = "Loading";
+
+    setTimeout(function() {
+
+      if ((btn.innerHTML === "Start" || btn.innerHTML === "Loading") && i === 0) {
+        btn.innerHTML = "Finished";
+        i = i + 2;
+
+      } else if ((btn.innerHTML === "Finished" || btn.innerHTML === "Loading") && i === 2) {
+        btn.innerHTML = "Start";
+        i = i - 2;
+      }
+
+    }, 1000);
+  }
+</script>
+
+</body>
+</html>

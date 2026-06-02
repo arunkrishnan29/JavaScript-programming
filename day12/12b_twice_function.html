@@ -1,0 +1,24 @@
+<!--
+12b. Continuing from exercise 12a, create a function runTwice(fun) that
+takes a function (as a parameter) and runs it twice.
+• runTwice(function() { console.log('12b'); }); => console.log("12b') twice
+• runTwice(add); => console.log(5) twice
+-->
+
+<!DOCTYPE>
+<html>
+  <head> </head>
+  <body>
+    <script>
+      function add(){
+        return console.log(2+3);
+
+        }
+      function runTwice(funct){
+        funct();
+        funct();
+      }
+      console.log(runTwice(add));
+    </script>
+  </body>
+</html>

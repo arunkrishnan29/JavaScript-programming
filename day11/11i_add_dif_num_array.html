@@ -1,0 +1,43 @@
+<!--
+11i. Create a function addNum(array, num) that takes an array of numbers
+and returns an array where each number is increased by 'num'.
+• addNum ([1, 2, 3], 2) => [3, 4, 5]
+• addNum ([1, 2, 3), 3) => [4, 5, 6]
+• addNum([-2, -1, 0, 99], 2) => [0, 1, 2, 101]
+-->
+
+<!--
+11h. Create a function addOne(array) that takes an array of numbers and
+returns an array where each number is increased by 1.
+• addOne([1, 2, 3]) => [2, 3, 4]
+• addOne([-2, -1, 0, 99]) => [-1, 0, 1, 100]
+-->
+
+
+<!DOCTYPE>
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            
+            const array1=[1,20,3,40,5,60,7,80,9];
+            const array2=[-1,-2,-3,110,22229,-77,-54,23]
+            console.log("The given array is ",array1);
+            console.log("After 2 added " );
+            console.log(addOne(array1,2));
+            console.log("The given array is ",array2);
+            console.log("After 4 added " );
+            console.log(addOne(array2,4));
+
+            function addOne(array1,num){
+            for(i=0;i<array1.length;i++){
+                const  val=array1[i]+num;
+                console.log(val);
+                
+               }
+            }
+                        
+        </script>
+    </body>
+</html>

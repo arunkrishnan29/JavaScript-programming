@@ -1,0 +1,35 @@
+<!--
+11p. Modify 11o so that if 'search' appears multiple times in the array, it will
+console.log() the index of the first appearance of 'search'. Use break;
+• ['hello', 'world', 'search, 'good', 'search'] => console.log(2)
+-->
+
+
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <script>
+      function countWords(words) {
+        const result = {};
+
+        for (let i = 0; i < words.length; i++) {
+          const word = words[i];
+
+        
+          if (word==='apple') {
+            console.log(`The index num is ${[i]},The word is ${word}`)
+          } 
+          else if  (word!=='apple'){
+            console.log(`not found,${words[-1]}`);
+            i++;
+
+          }
+          
+        }
+      }
+
+      console.log(countWords(['apple', 'grape', 'grape', 'watermelon', 'orange', 'apple']));
+    </script>
+  </body>
+</html>

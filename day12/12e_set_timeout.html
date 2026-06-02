@@ -1,0 +1,39 @@
+<!--
+12e. Create the 'Add to cart' button below. When clicking this button,
+display the message 'Added' below the button. Then, after 2 seconds,
+remove the message.
+-->
+
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+
+<button class="clk" onclick="updateButton()">
+addToCart
+</button>
+<p class="para">
+
+</p>
+
+<script>
+  let i = 0;
+
+  function updateButton() {
+    const btn = document.querySelector(".para");
+
+    btn.innerHTML = "Loading......";7 
+
+    setTimeout(function() {
+
+        btn.innerHTML = "added to cart";
+    }, 1000);
+
+    setTimeout(function() {
+      btn.innerHTML = "";
+    }, 3000);
+  }
+</script>
+
+</body>
+</html>

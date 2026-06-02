@@ -1,0 +1,60 @@
+<!--
+11d. Create a for loop that counts up from 0 to 10, but counts up by 2
+(0, 2, 4, .... 8, 10).
+1le. Create a for loop that counts down from 5 to O.
+-->
+
+<!--
+11f. Do exercises 11d and 1le, but using while loops.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <script>
+
+        const arr1 = [10,20,30,40,50,60,70,80,90,100];
+        console.log("array1 = ", arr1);
+
+        const arr2 = [11,22,33];
+        const arr3 = ['Hi','Hello','Welcome'];
+
+        console.log(getValue(arr1));
+
+        // Changed FOR loop to WHILE loop
+        function getValue(array1) {
+
+            let i = 0;
+
+            while (i < array1.length) {
+
+                console.log(array1[i]);
+
+                i = i + 2;
+            }
+        }
+
+
+        const array1 = [1,2,3,4,5,6,7,8,9];
+        console.log(array1);
+
+        console.log(arminus(array1));
+
+        // Changed FOR loop to WHILE loop
+        function arminus(arr) {
+
+            let i = arr.length - 1;
+
+            while (i >= 0) {
+
+                console.log(arr[i]);
+
+                i--;
+            }
+        }
+
+    </script>
+</body>
+</html>

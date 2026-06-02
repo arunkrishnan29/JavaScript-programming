@@ -1,0 +1,33 @@
+<!--
+11q. Create a function findindex(array, word) that searches an array for a
+string (in the 'word' parameter) and returns the index of the first
+appearance of the string. If it doesn't exist in the array, return -1.
+• findindex(l'green', 'red', 'blue', 'red'], 'red') = 1
+Full screen (
+--- findindex'green, red', blue", 'red'], 'yellow") => -1
+K
+-->
+
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<script>
+  const arr1 = ['green', 'red', 'blue', 'red'];
+  const arr2 = ['green', 'red', 'blue', 'red'];
+
+  function findIndex(words, search) {
+    for (let i = 0; i < words.length; i++) {
+      if (words[i] === search) {
+        
+        return( "The word is " + words[i] +" " + "The index is "+i); // first occurrence
+      }
+    }
+    return -1; // not found
+  }
+
+  console.log(findIndex(arr1, 'red'));    // 1
+  console.log(findIndex(arr2, 'yellow')); // -1
+</script>
+</body>
+</html>

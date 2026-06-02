@@ -1,0 +1,39 @@
+<!--
+12f. Continuing from 12e, if we click the button, wait 1 to 1.5 seconds, and
+then click the button again, notice that the second time, the message
+disappears very quickly (because the first setTimeout is still running
+and will make the message disappear very soon).
+• Modify the code so when we click the button, it "refreshes" the 2
+second wait time (waits for 2 seconds again and removes message).
+• Hint: you can cancel the previous setTimeout using clearTimeout()
+-->
+
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+
+<button class="clk" onclick="updateButton()">
+  addToCart
+</button>
+
+<p class="para"></p>
+
+<script>
+  let timeoutId;
+
+  function updateButton() {
+    const btn = document.querySelector(".para");
+
+    btn.innerHTML = "added to cart";
+
+    clearTimeout(timeoutId);
+
+    timeoutId = setTimeout(function() {
+      btn.innerHTML = "";
+    }, 2000);
+  }
+</script>
+
+</body>
+</html>

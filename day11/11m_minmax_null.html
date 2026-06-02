@@ -1,0 +1,58 @@
+<!--
+11m. Update exercise 11l to also handle these cases:
+• minMax([]) => { min: null, max: null }
+• minMax([3]) => ( min: 3, max: 3}
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<script>
+    
+        arr1=[];          
+        arr2=[11,3434,563432,22,2,-2,-1,67];
+        console.log("The Given array  =  ",arr1,'Minimun = ');
+        console.log(minn(arr1));
+        console.log("The Given array  =  ",arr2,'Mininum = ');
+        console.log(minn(arr2));
+
+
+        console.log("The Given array  =  ",arr1,'Maximum = ');
+        console.log(maxx(arr1));
+        console.log("The Given array  =  ",arr2,'Maximum = ');
+        console.log(maxx(arr2));
+
+
+        function minn(arr){
+
+        let min = arr[0]  || null;
+
+        for(let i = 1; i < arr.length; i++)  
+        {
+            if (arr[i] < min) {
+                min = arr[i];
+            }
+        }
+        console.log(min);
+
+        }
+        
+        function maxx(arr){
+
+        let max = arr[0] || null;
+
+        for(let i = 1; i < arr.length; i++)  
+        {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        console.log(max);
+        }
+
+
+</script>
+</body>
+</html>

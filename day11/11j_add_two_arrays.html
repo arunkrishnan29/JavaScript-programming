@@ -1,0 +1,35 @@
+<!--
+11j. Create a function addArrays(arrayl, array2) that takes 2 arrays of
+numbers and adds each number in the arrays together.
+• addArrays([1, 1, 2], [, 1, 31) = [2, 2, 5]
+• addArrays([1, 2, 3], [4, 5, 6]) = [5, 7, 9]
+-->
+
+
+<!DOCTYPE>
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            
+            const array1=[1,20,3,40,5,60,7,80,9];
+            const array2=[-1,-2,-3,110,22229,-77,-54,23]
+            console.log("The given array is ",array1);
+            console.log("The given array is ",array2);
+            console.log("After 1 added " );
+            console.log(addArrays(array1,array2));
+
+            function addArrays(array1, array2) {
+                const result = [];
+
+                for (let i = 0; i < array1.length; i++) {
+                    result.push(array1[i] + array2[i]);
+                }
+
+                return result;
+            }
+                        
+        </script>
+    </body>
+</html>

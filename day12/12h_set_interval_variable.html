@@ -1,0 +1,39 @@
+<!--
+12h. Continuing from 12g, instead of displaying "(2) New messages" every
+time, save the number of messages in a variable: let messages = 2;
+• Use the number in the variable to determine what title to display.
+• Create 2 buttons 'Add' / 'Remove' that increase / decrease the
+'messages' variable by 1.
+-->
+
+<!DOCTYPE>
+<html>
+  <head>
+    <title>
+      instagram
+    </title>
+  </head>
+  <body>
+    <button onclick="add()">Add</button>
+    <button onclick = "remove()">Remove</button>
+    <script>
+      let message=0;
+      function add(){
+        message++
+      }
+      function remove(){
+    
+        message--
+      }
+
+      setInterval(function(){
+      if(document.title==="instagram"){
+        document.title=`(${message}) New messages`;
+      }
+      else{
+        document.title="instagram";
+      }
+    },2000)
+    </script>
+  </body>
+</html>
