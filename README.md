@@ -31,3 +31,23 @@ This repository is created to:
 
 * [ ] Basics
 
+* [ ] Numbers and Math
+
+* [ ] Strings
+
+* [ ] HTML CSS Review
+
+* [ ] Variables
+
+* [ ] Booleans and If-Statements
+
+* [ ] Functions
+
+* [ ] Objects
+
+* [ ] DOM
+
+* [ ] Arrays and Loops
+
+* [ ] Advanced Functions
+
