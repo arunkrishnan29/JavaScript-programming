@@ -1,0 +1,30 @@
+<!--
+12o. Update exercise 12n to only remove the first 2 eggs from the array.
+Again, use filter() instead of a loop.
+• removeEgg(l'egg', 'apple', 'egg', 'egg', 'ham']) => ['apple, 'egg', 'ham']
+-->
+
+
+<!DOCTYPE>
+<html>
+  <head>
+    <title> arrow functions </title>
+  </head>
+  <body>
+    <script> 
+      const fruits = ["apple", "banana", "orange", ,"grape", "banana","banana","banana"];
+      let count =0;
+      const result = fruits.filter(fruit => {
+        if(fruit === "banana" && count <2){
+          count++;
+          return false;
+        }
+      
+          return true;
+        
+      });
+
+      console.log(result);
+2</script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!--
+12q. Go back to the earlier exercises in lesson 12 (12c - 12i) and instead of
+using onclick="...', switch the code to use .addEventListener('click', ...)
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+
+<button class="clk">
+addToCart
+</button>
+<p class="para">
+
+</p>
+
+<script>
+const button=document.querySelector(".clk");
+
+button.addEventListener('click',() => {
+  const para = document.querySelector('.para');
+    para.innerHTML = "Loading......";7 
+
+    setTimeout(()=> {
+
+        para.innerHTML = "added to cart";
+    }, 1000);
+
+    setTimeout(() =>{
+      btn.innerHTML = "";
+    }, 3000);
+  });
+</script>
+
+</body>
+</html>
