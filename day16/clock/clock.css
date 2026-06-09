@@ -1,0 +1,20 @@
+body{
+  margin:0;
+  background-color: black;
+  background-position: center;
+  background-repeat:no-repeat ;
+  background-size:cover ;
+}
+#clock-cointainer{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  height: 100vh;
+}
+#clock{
+  color:burlywood;
+  font-size: 6.5rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  backdrop-filter:blur(6px);
+}

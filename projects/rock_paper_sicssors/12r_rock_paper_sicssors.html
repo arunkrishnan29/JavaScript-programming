@@ -1,0 +1,47 @@
+<!--
+12r. Make a copy of the Rock Paper Scissors game into the files 12r.html,
+12r.css, and 12r.js.
+• Update the <link> and ‹script> elements to load 12r.css and 12r.js.
+• Also, make a copy of the images and make sure they load properly.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="12r.css">
+  </head>
+  <body>
+    <p class="title">Rock Paper Scissors</p>
+    <button class="move-button js-rock-button">
+      <img src="images/rock.png" class="move-icon">
+    </button>
+
+    <button class="move-button js-paper-button">
+      <img src="images/paper.png" class="move-icon">
+    </button>
+
+    <button class="move-button js-scissors-button">
+      <img src="images/scissors.png" class="move-icon">
+    </button>
+
+    <p class="js-result result"></p>
+    <p class="js-moves"></p>
+    <p class="js-score score"></p>
+
+    <!-- Solution for exercise 12v. -->
+    <button class="reset-score-button js-reset-score-button">
+      Reset Score
+    </button>
+
+    <!-- Solution for exercise 12s. -->
+    <button class="auto-play-button js-auto-play-button">
+      Auto Play
+    </button>
+
+    <!-- Solution for exercise 12x. -->
+    <p class="js-reset-confirmation"></p>
+    
+    <script src="12r.js"></script>
+  </body>
+</html>

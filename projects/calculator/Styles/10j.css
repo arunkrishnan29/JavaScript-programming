@@ -1,0 +1,36 @@
+
+        body{
+            background-color: rgb(255, 253, 253);
+        }
+        .num{
+            color:rgb(255, 255, 255);
+            background-color: rgb(87, 74, 122);
+            padding: 20px 20px;
+            border-radius: 50%;
+            margin-right: 5px;
+            font-family: Times;
+            font-size: 23px;
+            border: none;
+
+        }
+        .symbol{
+            color:rgb(255, 255, 255);
+            background-color: rgb(48, 19, 128);
+            padding: 20px 20px;
+            border-radius: 50%;
+            margin-right: 5px;
+            font-family: Times;
+            font-size: 23px;
+            font-weight: bold;
+            border:none;
+        }
+        .clear{
+            color:rgb(255, 255, 255);
+            background-color: rgb(88, 45, 206);
+            padding: 20px 12px;
+            border-radius: 50%;
+            margin-right: 5px;
+            font-family: Times;
+            font-size: 15px;
+            border:none;
+        }
