@@ -15,6 +15,9 @@ Learning and implementing JavaScript programming concepts.
 3.  SuperSimpleDev (YouTube)
    https://youtu.be/EerdGm-ehJQ?si=kduj5B75jfH-zVD9
 
+4.  Bro Code (YouTube)
+   https://www.youtube.com/watch?v=lfmg-EJ8gm4
+
 ---
 
 ##  Purpose
@@ -50,4 +53,15 @@ This repository is created to:
 * [ ] Arrays and Loops
 
 * [ ] Advanced Functions
+
+* [ ] Modules
+
+* [ ] External Libraries
+
+* [ ] Promises and fetch
+
+* [ ] Async Await
+
+
+
 
