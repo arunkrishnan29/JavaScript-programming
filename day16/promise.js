@@ -1,10 +1,15 @@
-function tossCoin(resolve,reject) =>{
-  let result=heads;
+function tossCoin() {
+  return new Promise((resolve,reject) =>{
+    //0=head,1=tails
+    let rand = Math.floor(Math.random()*2); 
+    if(rand===0)
+      resolve();
+    else
+      reject();
+      
+  })
   
-  if(rand==0)
-    resovle();
-  
-  else{
-    reject;
-  }
 }
+tossCoin()
+.then(()=> console.log("You Won its Head"))
+.catch(()=>console.log("You Lost "))
