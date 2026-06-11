@@ -1,0 +1,48 @@
+const laptop = {
+    brand: "ASUS",
+    model: "Vivobook 14",
+    specs: {
+        ram: 16,
+        storage: 1000
+    },
+    price: 73000,
+    inStock: true
+};
+
+const rgb = ["red", "green", "blue", "alpha"];
+
+// Exercise 1: Destructure brand, model, and price
+const { brand, model, price } = laptop;
+
+console.log(brand);
+console.log(model);
+console.log(price);
+
+// Exercise 2: Rename brand and use default value syntax for price
+const {
+    brand: laptopBrand,
+    price: laptopPrice = 50000
+} = laptop;
+
+console.log(laptopBrand);
+console.log(laptopPrice);
+
+// Exercise 3: Nested destructuring - get ram
+const {
+    specs: { ram }
+} = laptop;
+
+console.log(ram);
+
+// Exercise 4: Destructure first and third values
+const [primary, , tertiary] = rgb;
+
+console.log(primary);
+console.log(tertiary);
+
+// Exercise 5: Destructure directly in function parameters
+function displayLaptop({ brand, model, price }) {
+    console.log(`${brand} ${model} costs ₹${price}`);
+}
+
+displayLaptop(laptop);
