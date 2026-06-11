@@ -16,7 +16,7 @@ const { brand, model, price } = laptop;
 
 console.log(brand);
 console.log(model);
-console.log(price);
+console.log(price)
 
 // Exercise 2: Rename brand and use default value syntax for price
 const {
